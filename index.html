@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        max-width: 600px;
+
+        text-align: center;
+        margin: auto;
+      }
+     
+      td {
+        font-family: "Roboto", sans-serif;
+      }
+      .table_items_img img {
+        width: 250px;
+        height: 166px;
+        border-radius: 10px;
+        border: 6px solid #da2e71;
+      }
+      .table_items_info {
+        text-align: left;
+        padding: 20px;
+      }
+      .table_items_info h3 {
+        font-size: 28px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        margin: 0;
+      }
+      .table_items_info p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18.2px;
+      }
+      button {
+        cursor: pointer;
+      }
+      .list_game {
+        width: 168px;
+        height: 112px;
+        border-radius: 8px;
+        position: relative;
+        text-align: center;
+      }
+      .List_game_price {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        background: black;
+        width: 100%;
+        padding: 6px;
+        font-size: 12px;
+        color: #06c270;
+        width: -webkit-fill-available;
+        border-radius: 0 0 8px 8px;
+      }
+      .list_game_column {
+        display: block;
+      }
+      /* contact info */
+      .contact_info {
+        background: linear-gradient(#494c6a, #252638);
+        color: white;
+        text-align: left;
+      }
+      .contact_info button {
+        border-radius: 8px;
+      }
+      .contact_info_wrapper {
+        border-radius: 16px;
+      }
+
+      .contact_info_wrapper button {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 8px;
+        color: white;
+        border: none;
+        text-align: center;
+        width: 160px;
+      }
+      .contact_info_text {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+      }
+      .contact_info_text_small {
+        font-size: 12px;
+        opacity: 80%;
+      }
+      .contant_info_left_side {
+        width: 300px;
+        padding: 16px;
+        border-radius: 16px 0 0 16px;
+      }
+      a {
+        color: white;
+      }
+
+      /* media */
+      @media (max-width:600px) {
+    body {
+        max-width: 300px;
+        text-align: center;
+    }
+  .table_cell_column{
+      display: block;
+      text-align: center !important;
+    }
+    .contant_info_left_side{
+      border-radius: 16px 16px 0 0 ;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <table
+      width="100%"
+      bgcolor="#E5EAFF"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      id="background_table"
+    >
+      <tbody>
+        <!-- Logo -->
+        <tr>
+          <td  style="padding-top: 20px;"><img src="./logo.png" alt="LOGO" /></td>
+        </tr>
+        <!-- Header title -->
+        <tr>
+          <td
+            id="header_title"
+            style="
+              font-size: 40px;
+              font-weight: 700;
+              line-height: 54px;
+              color: #28293d;
+              padding:20px 10px;
+            "
+          >
+            Neque porro quisquam est qui dolorem ipsum
+          </td>
+        </tr>
+        <!-- Header info -->
+        <tr>
+          <td
+            id="header_info"
+            style="
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              color: #28293d;
+              opacity: 70%;
+              padding-bottom: 40px;
+              padding-left: 16px;
+              padding-right: 16px;
+            "
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </td>
+        </tr>
+        <!-- Table with items -->
+        <tr>
+          <td>
+            <table id="table_items" style="padding: 0 40px">
+              <tbody>
+                <tr>
+                  <td class="table_items_img table_cell_column">
+                    <img src="./item.png" alt="Fruity crown" />
+                  </td>
+                  <td class="table_items_info table_cell_column">
+                    <h3>
+                      Fruity crown<br />
+                      від Playson
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio, expedita. Unde et voluptatum debitis! Eaque
+                      reprehenderit amet asperiores
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table_items_img table_cell_column">
+                    <img src="./item.png" alt="Fruity crown" />
+                  </td>
+                  <td class="table_items_info table_cell_column">
+                    <h3>
+                      Fruity crown<br />
+                      від Playson
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio, expedita. Unde et voluptatum debitis! Eaque
+                      reprehenderit amet asperiores
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="table_items_img table_cell_column">
+                    <img src="./item.png" alt="Fruity crown" />
+                  </td>
+                  <td class="table_items_info table_cell_column">
+                    <h3>
+                      Fruity crown<br />
+                      від Playson
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio, expedita. Unde et voluptatum debitis! Eaque
+                      reprehenderit amet asperiores
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <!-- Button to play -->
+        <tr>
+          <td style="padding-top: 25px; padding-bottom: 55px;">
+            <button
+              style="
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18.2px;
+                text-align: center;
+                padding: 20px 60px;
+                border: 6px solid #da2e71;
+                border-radius: 8px;
+                background-color: inherit;
+              "
+            >
+              Грати
+            </button>
+          </td>
+        </tr>
+
+        <!-- Wave -->
+         <tr>
+          <td style="height: 30px; background: rgb(55, 57, 80);" >
+            
+          </td>
+         </tr>
+        <!-- Table for kinds of games -->
+        <tr>
+          <td>
+            <table
+              bgcolor="#373950"
+              style="padding: 50px 30px 20px 30px; color: white"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    id="table_kind_games_title"
+                    style="
+                      font-weight: 700;
+                      font-size: 20px;
+                      line-height: 24px;
+                      padding: 0px 30px;
+                    "
+                  >
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                    amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    id="table_kind_games_info"
+                    style="
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      padding: 8px;
+                      opacity: 80%;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </td>
+                </tr>
+                <!-- Table with list of games -->
+                <tr>
+                  <td>
+                    <table style="margin: auto;">
+                      <tbody>
+                        <tr class="list_game_column">
+                          <!-- 1th item -->
+                          <td class="table_cell_column">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="list_game"
+                                    style="
+                                      background-image: url(./game1.jpg);
+                                      background-size: contain;
+                                    "
+                                  >
+                                    <p class="List_game_price">€458,658.12</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="list_game_title"
+                                    style="text-align: left; padding-top: 4px"
+                                  >
+                                    <img
+                                      src="./Microgaming.png"
+                                      alt="icon"
+                                      style="vertical-align: middle"
+                                    />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        padding-left: 8px;
+                                      "
+                                      >Game Title</span
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <!-- 2nd item -->
+                          <td class="table_cell_column">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="list_game"
+                                    style="
+                                      background-image: url(./game2.jpg);
+                                      background-size: contain;
+                                    "
+                                  >
+                                    <p class="List_game_price">€458,658.12</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="list_game_title"
+                                    style="text-align: left; padding-top: 4px"
+                                  >
+                                    <img
+                                      src="./Microgaming.png"
+                                      alt="icon"
+                                      style="vertical-align: middle"
+                                    />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        padding-left: 8px;
+                                      "
+                                      >Game Title</span
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <!-- 3 item -->
+                          <td class="table_cell_column">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="list_game"
+                                    style="
+                                      background-image: url(./game3.jpg);
+                                      background-size: contain;
+                                    "
+                                  >
+                                    <p class="List_game_price">€458,658.12</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    class="list_game_title"
+                                    style="text-align: left; padding-top: 4px"
+                                  >
+                                    <img
+                                      src="./Microgaming.png"
+                                      alt="icon"
+                                      style="vertical-align: middle"
+                                    />
+                                    <span
+                                      style="
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        padding-left: 8px;
+                                      "
+                                      >Game Title</span
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top: 20px">
+                    <button
+                      style="
+                        padding: 10px 70px;
+                        color: white;
+                        background-color: #da2e71;
+                        border-radius: 8px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        border: none;
+                      "
+                    >
+                      Грати
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <!-- Contact information -->
+        <tr class="contact_info">
+          <td style="padding: 20px 46px">
+            <table>
+              <tbody>
+                <tr>
+                  <td
+                    class="contact_info_wrapper"
+                    
+                  >
+                    <table  style="
+                      background: linear-gradient(#494c6a, #494c6a) padding-box,
+                        linear-gradient(to right, #ff3b3b, #6600cc) border-box;
+                      border-radius: 16px;
+                      border: 1px solid transparent;
+                      margin-bottom: 8px;
+                    ">
+                      <tbody>
+                        <tr>
+                          <td
+                            class="contant_info_left_side table_cell_column"
+                            style="
+                              background: linear-gradient(
+                                140deg,
+                                #ff3b3b,
+                                #6600cc
+                              );
+                            "
+                          >
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img
+                                              src="./Frame.png"
+                                              alt="phone_icon"
+                                              style="
+                                                width: 40px;
+                                                vertical-align: middle;
+                                              "
+                                            />
+                                          </td>
+                                          <td class="contact_info_text">
+                                            Встановлюйте додаток та отримуйте
+                                            бонус
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="contact_info_text_small">
+                                    Для встановлення додатка переходьте за
+                                    <a href="#">посиланням</a> або натисніть
+                                    кнопку “Завантажити”
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td style="padding: 16px" class="table_cell_column">
+                            <button
+                              style="
+                                background: linear-gradient(
+                                  170deg,
+                                  #ff3b3b,
+                                  #6600cc
+                                );
+                              "
+                            >
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="./cloud-download.png"
+                                        alt="downloan_icon"
+                                      />
+                                    </td>
+                                    <td>Завантажити</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="contact_info_wrapper"
+                    style="border: 1px solid #6600cc"
+                  >
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td
+                            class="contant_info_left_side table_cell_column"
+                            style="
+                              background: linear-gradient(
+                                140deg,
+                                #3e7bfa,
+                                #6600cc
+                              );
+                            "
+                          >
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="./dzv.png"
+                                      alt="phone_icon"
+                                      style="
+                                        width: 40px;
+                                        vertical-align: middle;
+                                      "
+                                    />
+                                  </td>
+                                  <td class="contact_info_text">
+                                    Будь завжди з нами на зв'язку! <br />
+                                    Підключай
+                                    <a href="#">Telegram Bot</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+
+                          <td style="padding: 16px" class="table_cell_column">
+                            <button
+                              style="
+                                background: linear-gradient(
+                                  140deg,
+                                  #3e7bfa,
+                                  #6600cc
+                                );
+                              "
+                            >
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <img src="./tg.png" alt="tg_icon" />
+                                    </td>
+                                    <td>Підключитися</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Connect with specialist -->
+                <tr>
+                  <td
+                    class="contact_specialist_wrapper"
+                   
+                  >
+                    <table  style="
+                      border-top: 2px dashed rgb(255, 255, 255, 0.6);
+                      border-bottom: 2px dashed rgb(255, 255, 255, 0.6);margin-top: 8px;
+                    ">
+                      <tbody>
+                        <tr>
+                          <td
+                            class="contant_info_left_side table_cell_column"
+                            style="padding: 0 !important"
+                          >
+                            <p class="contact_info_text">Залишились питання?</p>
+                            <p
+                              class="contact_info_text_small"
+                              style="opacity: 60%"
+                            >
+                              Наші фахівці допоможуть розібратися
+                            </p>
+                          </td>
+
+                          <td class="table_cell_column">
+                            <button
+                              style="
+                                width: 180px;
+                                color: white;
+                                background: linear-gradient(
+                                  170deg,
+                                  #ff3b3b,
+                                  #6600cc
+                                );
+                              "
+                            >
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <img src="./phone.png" alt="phone_icon" />
+                                    </td>
+                                    <td
+                                      style="font-size: 14px; font-weight: 700"
+                                    >
+                                      Замовити дзвінок
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Agreement  -->
+                <tr>
+                  <td class="footer_agreement" style="padding-top: 20px;">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td style="font-size: 10px; color: #8F90A6; line-height: 16px; text-align: justify;">
+                            Ви отримали цей лист, тому що зареєстровані на
+                            google.com та підтвердили свою згоду з Правилами та
+                            Умовами. Для того, щоб відписатися від розсилки,
+                            натисніть на <a href="#" style="color: red;">посилання</a> 
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
